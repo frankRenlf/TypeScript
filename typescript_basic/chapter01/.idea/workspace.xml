@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ee53970-3dd2-4989-862d-69633b9867a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_basis.js" beforeDir="false" afterPath="$PROJECT_DIR$/02_basis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02_basis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/02_basis.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -57,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672223779840</updated>
       <workItem from="1672223782111" duration="83000" />
-      <workItem from="1672223873481" duration="1259000" />
+      <workItem from="1672223873481" duration="2007000" />
     </task>
     <servers />
   </component>
