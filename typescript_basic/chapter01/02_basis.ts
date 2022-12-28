@@ -5,8 +5,8 @@ b = 'hello';
 
 let c: boolean = true;
 
-function sum(a: number, b: number) {
-    return a + b;
+function sum(a: number, b: number): string {
+    return (a + b).toString();
 }
 
 console.log(sum(12, 123))
