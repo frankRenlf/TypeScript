@@ -20,3 +20,7 @@ for (let i = 1; i < 5; i++) {
     arr[i] = arr[i - 1] * i;
 }
 console.log(arr)
+
+
+let arr2: Array<string>;
+arr2 = ['1', '2', '3']
