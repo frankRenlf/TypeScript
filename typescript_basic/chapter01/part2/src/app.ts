@@ -1,3 +1,1 @@
-
-
-import '../../part1/01_helloTS.ts'
+let a = 1;
