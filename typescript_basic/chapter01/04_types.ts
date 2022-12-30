@@ -6,4 +6,4 @@ let b: {
 b = {name: 'hello'}
 
 let c: { name: string, [propName: string]: any }
-c = {name: 'frank', age: 12, gender: 'male'}
+c = {name: 'frank', age: 12, gender: 'male', birth: '2000-09-30'}
