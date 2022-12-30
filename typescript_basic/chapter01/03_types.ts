@@ -10,6 +10,6 @@ let c: number;
 c = a;
 c = b as number;
 
-function fn(): number {
-    return 1
+function fn(): void {
+    return undefined;
 }
