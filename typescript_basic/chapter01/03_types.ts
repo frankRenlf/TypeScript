@@ -9,3 +9,7 @@ b = true;
 let c: number;
 c = a;
 c = b as number;
+
+function fn(): number {
+    return 1
+}
