@@ -19,7 +19,7 @@ arr[0] = 1
 for (let i = 1; i < 5; i++) {
     arr[i] = arr[i - 1] * i;
 }
-console.log(arr)
+// console.log(arr)
 
 
 let arr2: Array<string>;
@@ -28,13 +28,21 @@ arr2 = ['1', '2', '3']
 let h: [string, number];
 h = ['hello', 2];
 
+
+enum Gender {
+    mMale,
+    female,
+    notComment
+}
+
 let i: {
     name: string,
     gender: 0 | 1
 }
 i = {
     name: 'frank',
-    gender: 1,
+    gender: Gender.mMale,
 }
+i.gender = Gender.female
 
-enum
+console.log(Gender.mMale)
