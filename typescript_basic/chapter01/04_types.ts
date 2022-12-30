@@ -30,9 +30,9 @@ h = ['hello', 2];
 
 
 enum Gender {
-    mMale,
-    female,
-    notComment
+    Male,
+    Female,
+    NotComment
 }
 
 let i: {
@@ -41,8 +41,8 @@ let i: {
 }
 i = {
     name: 'frank',
-    gender: Gender.mMale,
+    gender: Gender.Male,
 }
-i.gender = Gender.female
+i.gender = Gender.Female
 
-console.log(Gender.mMale)
+console.log(Gender.Male)
