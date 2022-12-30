@@ -11,5 +11,9 @@ c = a;
 c = b as number;
 
 function fn(): void {
-    return undefined;
+    return null;
+}
+
+function fn2():never{
+    return 
 }
