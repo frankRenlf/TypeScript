@@ -62,7 +62,7 @@
       <workItem from="1672223782111" duration="83000" />
       <workItem from="1672223873481" duration="2863000" />
       <workItem from="1672284816199" duration="589000" />
-      <workItem from="1672367404706" duration="2681000" />
+      <workItem from="1672367404706" duration="3017000" />
     </task>
     <servers />
   </component>
@@ -72,6 +72,7 @@
       <list>
         <option value="$PROJECT_DIR$/01_helloTS.js" />
         <option value="$PROJECT_DIR$/02_basis.js" />
+        <option value="$PROJECT_DIR$/04_types.js" />
       </list>
     </option>
   </component>
