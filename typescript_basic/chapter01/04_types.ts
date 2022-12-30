@@ -1,6 +1,6 @@
 let b: {
     name: string,
-    age: number,
+    age?: number,
 };
 
 b = {name: 'hello'}
