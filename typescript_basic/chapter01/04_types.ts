@@ -46,3 +46,13 @@ i = {
 i.gender = Gender.Female
 
 console.log(Gender.Male)
+
+let j: { name: string } & { age: number }
+j = {
+    name: 'lily',
+    age: 11
+}
+
+type myType = 1 | 2 | 3;
+let m: myType;
+m = 2;
