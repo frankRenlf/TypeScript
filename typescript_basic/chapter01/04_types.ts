@@ -30,9 +30,11 @@ h = ['hello', 2];
 
 let i: {
     name: string,
-    gender: string
+    gender: 0 | 1
 }
 i = {
     name: 'frank',
-    gender: 'male',
+    gender: 1,
 }
+
+enum
