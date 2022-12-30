@@ -12,3 +12,11 @@ let fn: (a: string, b: number) => number;
 fn = function (x, y) {
     return x.length + y;
 }
+
+let arr: number[];
+arr = []
+arr[0] = 1
+for (let i = 1; i < 5; i++) {
+    arr[i] = arr[i - 1] * i;
+}
+console.log(arr)
