@@ -15,5 +15,5 @@ function fn(): void {
 }
 
 function fn2():never{
-
+    throw new Error('error happen')
 }
