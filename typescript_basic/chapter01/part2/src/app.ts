@@ -1,3 +1,3 @@
-console.log('123')
-let a: number;
-a = 10;
+
+
+import '../../part1/01_helloTS.ts'

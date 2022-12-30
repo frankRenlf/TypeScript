@@ -1,4 +1,3 @@
 "use strict";
-console.log('123');
-let a;
-a = 10;
+Object.defineProperty(exports, "__esModule", { value: true });
+require("../../part1/01_helloTS.ts");
