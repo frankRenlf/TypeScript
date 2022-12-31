@@ -1,6 +1,6 @@
 // import a package
 const path = require('path')
-
+const HTMLWebpackPlugin = require('html-webpack-plugin')
 // webpack configuration
 module.exports = {
     mode: "production",
@@ -24,5 +24,11 @@ module.exports = {
                 exclude: /node-modules/
             }
         ]
-    }
+    },
+    // config the webpack plugin
+    plugins: [
+        new HTMLWebpackPlugin({
+            title: "custom title"
+        }),
+    ]
 };
