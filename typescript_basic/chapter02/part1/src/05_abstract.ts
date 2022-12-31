@@ -10,6 +10,22 @@ abstract class Car {
     structure() {
         console.log('ssss');
     }
+
+    abstract drive(): void;
 }
 
-let car1 = new Car("1", "2");
+class BWM extends Car {
+
+    constructor(name: string, type: string) {
+        super(name, type);
+    }
+
+    drive(): void {
+        console.log(this.name,this.type);
+    }
+
+}
+
+let bwm1 = new BWM("1", "f")
+bwm1.drive();
+console.log(bwm1)
