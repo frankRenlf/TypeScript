@@ -21,7 +21,31 @@ module.exports = {
             {
                 // rules for test
                 test: /\.ts$/,
-                use: 'ts-loader',
+                use: [
+                    // config babel
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            // set Predefine
+                            presets: [
+                                // appoint env
+                                "@babel/preset-env",
+                                // config info
+                                {
+                                    // Browser to be compatible
+                                    targets: {
+                                        "chrome": "88"
+                                    },
+                                    // set core-js edition
+                                    "core-js": 3,
+                                    // the use of core-js
+                                    "useBuiltIns": "usage",
+                                }
+                            ]
+                        }
+                    },
+                    'ts-loader'
+                ],
                 exclude: /node-modules/
             }
         ]
