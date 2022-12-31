@@ -6,3 +6,8 @@ console.log(val)
 function fn(a: number, b: number) {
     return a + b
 }
+
+let box = document.getElementById('box')
+box?.addEventListener('click', () => {
+    alert('success')
+})
