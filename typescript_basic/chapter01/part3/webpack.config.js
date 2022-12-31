@@ -33,5 +33,9 @@ module.exports = {
             // title: "custom title"
             template: "./src/index.html"
         }),
-    ]
+    ],
+    // set the import modules
+    resolve: {
+        extensions: ['.ts', '.js']
+    }
 };
