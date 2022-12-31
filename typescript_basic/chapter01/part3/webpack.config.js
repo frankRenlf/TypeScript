@@ -1,6 +1,7 @@
 // import a package
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 // webpack configuration
 module.exports = {
     mode: "production",
@@ -27,6 +28,7 @@ module.exports = {
     },
     // config the webpack plugin
     plugins: [
+        new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
             // title: "custom title"
             template: "./src/index.html"
