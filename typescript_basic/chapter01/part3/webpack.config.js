@@ -12,7 +12,12 @@ module.exports = {
         // pack dir
         path: path.resolve(__dirname, 'dist'),
         // output file name
-        filename: "bundle.js"
+        filename: "bundle.js",
+        /*
+        environment: {
+            arrowFunction: false
+        }
+        */
     },
     // modules in package
     module: {
