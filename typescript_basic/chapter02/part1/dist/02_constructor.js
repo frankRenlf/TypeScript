@@ -22,8 +22,12 @@ class University extends College {
     offer(t) {
         this.access.push(t);
     }
+    input(amount) {
+        console.log(amount * 10);
+    }
 }
 const leeds = new University('leeds', 100, 12);
 console.log(leeds);
 leeds.offer(new Student('frank'));
 console.log(leeds);
+leeds.input(22);

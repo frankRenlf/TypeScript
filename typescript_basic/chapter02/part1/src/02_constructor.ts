@@ -36,6 +36,9 @@ class University<T> extends College {
         this.access.push(t)
     }
 
+    override input(amount: number) {
+        console.log(amount * 10);
+    }
 }
 
 const leeds = new University('leeds', 100, 12);
@@ -44,3 +47,4 @@ console.log(leeds);
 
 leeds.offer(new Student('frank'))
 console.log(leeds);
+leeds.input(22);
