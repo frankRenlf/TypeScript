@@ -28,8 +28,8 @@ module.exports = {
                         options: {
                             // set Predefine
                             presets: [
-                                // appoint env
                                 [
+                                    // appoint env
                                     "@babel/preset-env",
                                     // config info
                                     {
