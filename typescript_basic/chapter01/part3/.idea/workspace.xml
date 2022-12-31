@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="129785ea-451c-40e9-9b09-dc969b178a59" name="Changes" comment="" />
+    <list default="true" id="129785ea-451c-40e9-9b09-dc969b178a59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../chapter02/part2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chapter02/part2/.idea/part2.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +43,6 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "16.17.0",
     "javascript.nodejs.core.library.typings.version": "16.18.11",
@@ -61,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672466883529</updated>
-      <workItem from="1672466884653" duration="10787000" />
+      <workItem from="1672466884653" duration="11416000" />
     </task>
     <servers />
   </component>
