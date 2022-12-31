@@ -1,4 +1,4 @@
-export default class Person {
+class Person {
     name: string;
     age: number;
 

@@ -1,25 +1,46 @@
-import Person from './01_introduction'
-class University {
-    name: string;
-    rank: number;
-    access: Array<Person>;
+class College {
+    id: number;
 
-
-    constructor(name: string, rank: number) {
-        this.name = name;
-        this.rank = rank;
-        this.access = new Array<Person>();
+    constructor(id: number) {
+        this.id = id;
     }
 
-    offer(student: Person) {
-        this.access.push(student);
+    input(amount: number) {
+        console.log(this, amount)
     }
 
 }
 
-const leeds = new University('leeds', 100);
+class Student {
+    name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+}
+
+class University<T> extends College {
+    name: string;
+    rank: number;
+    access: Array<T>;
+
+
+    constructor(name: string, rank: number, id: number) {
+        super(id);
+        this.name = name;
+        this.rank = rank;
+        this.access = new Array<T>;
+    }
+
+    offer(t: T) {
+        this.access.push(t)
+    }
+
+}
+
+const leeds = new University('leeds', 100, 12);
 
 console.log(leeds);
 
-leeds.offer(new Person('frank', 22, 100))
+leeds.offer(new Student('frank'))
 console.log(leeds);

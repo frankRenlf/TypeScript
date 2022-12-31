@@ -1,15 +1,29 @@
-import Person from './01_introduction';
-class University {
-    constructor(name, rank) {
-        this.name = name;
-        this.rank = rank;
-        this.access = [];
+"use strict";
+class College {
+    constructor(id) {
+        this.id = id;
     }
-    offer(student) {
-        this.access.push(student);
+    input(amount) {
+        console.log(this, amount);
     }
 }
-const leeds = new University('leeds', 100);
+class Student {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class University extends College {
+    constructor(name, rank, id) {
+        super(id);
+        this.name = name;
+        this.rank = rank;
+        this.access = new Array;
+    }
+    offer(t) {
+        this.access.push(t);
+    }
+}
+const leeds = new University('leeds', 100, 12);
 console.log(leeds);
-leeds.offer(new Person('frank', 22, 100));
+leeds.offer(new Student('frank'));
 console.log(leeds);
