@@ -28,7 +28,8 @@ module.exports = {
     // config the webpack plugin
     plugins: [
         new HTMLWebpackPlugin({
-            title: "custom title"
+            // title: "custom title"
+            template: "./src/index.html"
         }),
     ]
 };
