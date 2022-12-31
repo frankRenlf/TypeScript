@@ -24,29 +24,31 @@ module.exports = {
                 use: [
                     // config babel
                     {
-                        loader: 'babel-loader',
+                        loader: "babel-loader",
                         options: {
                             // set Predefine
                             presets: [
                                 // appoint env
-                                "@babel/preset-env",
-                                // config info
-                                {
-                                    // Browser to be compatible
-                                    targets: {
-                                        "chrome": "88"
-                                    },
-                                    // set core-js edition
-                                    "core-js": 3,
-                                    // the use of core-js
-                                    "useBuiltIns": "usage",
-                                }
+                                [
+                                    "@babel/preset-env",
+                                    // config info
+                                    {
+                                        // Browser to be compatible
+                                        targets: {
+                                            "chrome": "88"
+                                        },
+                                        // set core-js edition
+                                        "corejs": "3",
+                                        // the use of core-js
+                                        "useBuiltIns": "usage",
+                                    }
+                                ]
                             ]
                         }
                     },
                     'ts-loader'
                 ],
-                exclude: /node-modules/
+                exclude: /node_modules/
             }
         ]
     },

@@ -7,3 +7,5 @@ function sum(a: number, b: number): number {
 }
 
 console.log(sum(2, 3))
+
+console.log(sum(111, 123))
