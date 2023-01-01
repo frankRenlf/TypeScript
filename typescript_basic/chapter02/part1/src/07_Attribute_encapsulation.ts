@@ -19,7 +19,7 @@
         }
 
 
-        set motion(value: string) {
+        set setMotion(value: string) {
             this._motion = value;
         }
 
@@ -35,7 +35,7 @@
 
     let panda1 = new Panda('run', 'lili', 'male');
     panda1.name = '1';
-    panda1.motion
+    panda1.setMotion;
     console.log(panda1);
     panda1.move();
 })()
