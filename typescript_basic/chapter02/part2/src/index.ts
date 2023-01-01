@@ -26,6 +26,24 @@ class Food {
     }
 }
 
-const food = new Food();
-food.change();
-console.log(food.X, food.Y)
+class ScorePanel {
+    score = 0;
+    level = 1;
+    scoreEl: HTMLElement;
+    levelEl: HTMLElement;
+
+    constructor() {
+        this.scoreEl = document.getElementById('score')!;
+        this.levelEl = document.getElementById('level')!;
+    }
+
+    scoreAdd() {
+        this.score++;
+        this.scoreEl.innerHTML = this.score.toString();
+    }
+
+    levelAdd() {
+        this.level++;
+        this.levelEl.innerHTML = this.level.toString();
+    }
+}
