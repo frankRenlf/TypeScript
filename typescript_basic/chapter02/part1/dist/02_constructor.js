@@ -29,5 +29,6 @@ class University extends College {
 const leeds = new University('leeds', 100, 12);
 console.log(leeds);
 leeds.offer(new Student('frank'));
+leeds.offer(new Student('lily'));
 console.log(leeds);
 leeds.input(22);
