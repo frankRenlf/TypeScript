@@ -42,6 +42,9 @@ class ScorePanel {
     scoreAdd() {
         this.score++;
         this.scoreEl.innerHTML = this.score.toString();
+        if (this.score % 5 === 0) {
+            this.levelUp();
+        }
     }
 
     levelUp() {
@@ -53,6 +56,6 @@ class ScorePanel {
 }
 
 const p = new ScorePanel();
-p.scoreAdd();
-p.scoreAdd();
-p.levelUp();
+for (let i = 0; i <19; i++) {
+    p.scoreAdd();
+}
