@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font: bold 20px "Courier New";
 }
 
@@ -26,15 +26,20 @@ body{
   // set main principal axis
   flex-flow: column;
   // set Secondary axis
-  
+  align-items: center;
+  justify-content: space-around;
 
+  // game stage
   #stage {
     width: 304px;
     height: 302px;
     border: 2px solid black;
   }
 
-  #score-panel{
-
+  // record marks
+  #score-panel {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
   }
 }
