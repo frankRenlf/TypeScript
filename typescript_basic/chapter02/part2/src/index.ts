@@ -47,3 +47,7 @@ class ScorePanel {
         this.levelEl.innerHTML = this.level.toString();
     }
 }
+const p = new ScorePanel();
+p.scoreAdd();
+p.scoreAdd();
+p.levelAdd();
