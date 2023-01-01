@@ -8,7 +8,7 @@
     }
 
     class Panda {
-        private readonly _motion: string;
+        private _motion: string;
         name: string;
         gender: string;
 
@@ -19,6 +19,10 @@
         }
 
 
+        set motion(value: string) {
+            this._motion = value;
+        }
+
         get motion(): string {
             return this._motion;
         }
@@ -26,10 +30,12 @@
         move(): void {
             console.log(this._motion)
         }
+
     }
 
     let panda1 = new Panda('run', 'lili', 'male');
-    panda1.name = '1'
+    panda1.name = '1';
+    panda1.motion
     console.log(panda1);
     panda1.move();
 })()
