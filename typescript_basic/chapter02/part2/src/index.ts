@@ -31,10 +31,12 @@ class ScorePanel {
     level = 1;
     scoreEl: HTMLElement;
     levelEl: HTMLElement;
+    maxLevel: number;
 
-    constructor() {
+    constructor(maxLevel: number = 10) {
         this.scoreEl = document.getElementById('score')!;
         this.levelEl = document.getElementById('level')!;
+        this.maxLevel = maxLevel;
     }
 
     scoreAdd() {
@@ -42,12 +44,15 @@ class ScorePanel {
         this.scoreEl.innerHTML = this.score.toString();
     }
 
-    levelAdd() {
-        this.level++;
-        this.levelEl.innerHTML = this.level.toString();
+    levelUp() {
+        if (this.level < this.maxLevel) {
+            this.level++;
+            this.levelEl.innerHTML = this.level.toString();
+        }
     }
 }
+
 const p = new ScorePanel();
 p.scoreAdd();
 p.scoreAdd();
-p.levelAdd();
+p.levelUp();
