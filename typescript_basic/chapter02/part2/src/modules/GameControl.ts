@@ -20,7 +20,8 @@ class GameControl {
     }
 
     keyDownHandler(event: KeyboardEvent) {
-        console.log(this.snake.X, this.snake.Y);
+        console.log(event.key);
+        console.log(this.snake);
     }
 }
 
