@@ -6,7 +6,7 @@
             this.name = name;
             this.gender = gender;
         }
-        setMotion(value) {
+        set motion(value) {
             this._motion = value;
         }
         get motion() {
@@ -18,7 +18,7 @@
     }
     let panda1 = new Panda('run', 'lili', 'male');
     panda1.name = '1';
-    panda1.setMotion("set");
+    panda1.motion = "set";
     console.log(panda1);
     panda1.move();
     console.log(panda1.motion);
