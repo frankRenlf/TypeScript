@@ -56,6 +56,6 @@ class ScorePanel {
 }
 
 const p = new ScorePanel();
-for (let i = 0; i <19; i++) {
+for (let i = 0; i <100; i++) {
     p.scoreAdd();
 }
