@@ -1,3 +1,4 @@
 import './style/index.less'
 import GameControl from "./modules/GameControl";
-console.log(new GameControl());
+const gc= new GameControl();
+console.log(gc.snake.X)

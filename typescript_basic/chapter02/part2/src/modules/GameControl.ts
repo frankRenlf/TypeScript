@@ -7,11 +7,13 @@ class GameControl {
     snake: Snake;
     scorePanel: ScorePanel;
     food: Food;
+    direction: string;
 
     constructor() {
         this.snake = new Snake();
         this.scorePanel = new ScorePanel();
         this.food = new Food();
+        this.direction = 'right';
         this.init();
     }
 
@@ -20,8 +22,9 @@ class GameControl {
     }
 
     keyDownHandler(event: KeyboardEvent) {
-        console.log(event.key);
-        console.log(this.snake);
+        this.direction = event.key;
+        console.log(this.direction)
+        console.log(this)
     }
 }
 
