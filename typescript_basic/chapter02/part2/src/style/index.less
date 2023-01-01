@@ -35,9 +35,14 @@ body {
     height: 302px;
     border: 3px solid grey;
     // design snake
-    #snake{
-      &>div{
-        
+    #snake {
+      & > div {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border: 1px soild @bg-color;
+        // start relative
+        position: absolute;
       }
     }
   }
