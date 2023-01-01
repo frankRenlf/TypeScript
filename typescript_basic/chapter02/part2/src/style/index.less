@@ -8,9 +8,33 @@
   box-sizing: border-box;
 }
 
+body{
+  font: bold 20px "Courier New";
+}
+
 // set main-container style
 #main {
   width: 360px;
   height: 420px;
   background-color: @bg-color;
+  margin: 100px auto;
+  border: 10px solid skyblue;
+  border-radius: 30px;
+
+  // start bound
+  display: flex;
+  // set main principal axis
+  flex-flow: column;
+  // set Secondary axis
+  
+
+  #stage {
+    width: 304px;
+    height: 302px;
+    border: 2px solid black;
+  }
+
+  #score-panel{
+
+  }
 }
