@@ -54,6 +54,15 @@ module.exports = {
                     'ts-loader'
                 ],
                 exclude: /node_modules/
+            },
+            // set less
+            {
+                test: /\.less$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "less-loader"
+                ]
             }
         ]
     },
