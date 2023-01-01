@@ -1,7 +1,6 @@
 interface Animal {
     name: string;
     motion: string;
-
     gender: string;
 
     move(): void;
