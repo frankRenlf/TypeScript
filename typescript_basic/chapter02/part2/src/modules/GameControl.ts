@@ -18,13 +18,11 @@ class GameControl {
     }
 
     init() {
-        document.addEventListener('keydown', this.keyDownHandler);
+        document.addEventListener('keydown', this.keyDownHandler.bind(this));
     }
 
     keyDownHandler(event: KeyboardEvent) {
         this.direction = event.key;
-        console.log(this.direction)
-        console.log(this)
     }
 }
 
