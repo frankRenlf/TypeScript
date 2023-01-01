@@ -4,7 +4,7 @@ class Snake {
     sectionList: HTMLCollection;
     element: HTMLElement;
 
-    constructor(head: HTMLElement) {
+    constructor() {
         this.element = document.getElementById('snake')!;
         this.head = document.querySelector('#snake>div')!;
         this.sectionList = this.element.getElementsByTagName('div');
