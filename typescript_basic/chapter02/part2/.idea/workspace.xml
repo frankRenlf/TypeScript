@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="302d38d6-dc1e-48e4-b6ca-a9f657806622" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/Food.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/ScorePanel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../part1/dist/06_interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/../part1/dist/06_interface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../part1/dist/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../part1/dist/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../part1/src/06_interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../part1/src/06_interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../part1/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../part1/src/test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
@@ -14,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="TypeScript File" />
         <option value="Less File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -75,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672559644603</updated>
-      <workItem from="1672559645729" duration="7554000" />
+      <workItem from="1672559645729" duration="8374000" />
     </task>
     <servers />
   </component>

@@ -22,6 +22,4 @@ class Panda implements Animal {
     }
 }
 
-let panda1 = new Panda('run', 'lili', 'male');
-console.log(panda1);
-panda1.move();
+export default Panda;
