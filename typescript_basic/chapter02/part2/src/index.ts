@@ -19,10 +19,13 @@ class Food {
 
     // modify position
     change() {
-        this.element.style.left = String(Math.round(Math.random() * 29) * 10);
-        this.element.style.top =
+        let top = Math.round(Math.random() * 29) * 10;
+        let left = Math.round(Math.random() * 29) * 10;
+        this.element.style.left = left + 'px';
+        this.element.style.top = top + 'px';
     }
 }
 
 const food = new Food();
+food.change();
 console.log(food.X, food.Y)
