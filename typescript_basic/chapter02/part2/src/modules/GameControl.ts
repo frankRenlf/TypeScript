@@ -21,8 +21,37 @@ class GameControl {
         document.addEventListener('keydown', this.keyDownHandler.bind(this));
     }
 
+    /*
+        ArrowUp
+        ArrowDown
+        ArrowLeft
+        ArrowRight
+     */
     keyDownHandler(event: KeyboardEvent) {
         this.direction = event.key;
+    }
+
+    // control the move of snake
+    run() {
+        /*
+            based on direction
+         */
+        let X = this.snake.X;
+        let Y = this.snake.Y;
+        switch (this.direction) {
+            case "ArrowUp":
+                Y -= 10;
+                break;
+            case "ArrowDown":
+                Y += 10;
+                break;
+            case "ArrowLeft":
+                X -= 10;
+                break;
+            case "ArrowRight":
+                X += 10;
+                break;
+        }
     }
 }
 
