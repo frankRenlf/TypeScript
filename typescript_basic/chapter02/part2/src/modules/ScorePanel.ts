@@ -27,6 +27,13 @@ class ScorePanel {
             this.levelEl.innerHTML = this.level.toString();
         }
     }
+
+    restore() {
+        this.score = 0;
+        this.level = 1;
+        this.scoreEl.innerHTML = this.score.toString();
+        this.levelEl.innerHTML = this.level.toString();
+    }
 }
 
 export default ScorePanel;

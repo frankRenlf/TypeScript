@@ -2,6 +2,7 @@ import Snake from "./Snake";
 import ScorePanel from "./ScorePanel";
 import Food from "./Food";
 import snake from "./Snake";
+import scorePanel from "./ScorePanel";
 
 class GameControl {
     snake: Snake;
@@ -18,6 +19,15 @@ class GameControl {
         this.direction = '';
         this.food.change();
         this.init();
+        document.getElementById('btn')!.addEventListener('click', () => {
+            this.direction = '';
+            this.snake.restore();
+            this.food.change();
+            this.scorePanel.restore();
+            this.isLive = true;
+            document.removeEventListener('keydown', this.keyDownHandler.bind(this));
+            this.init();
+        })
     }
 
     init() {
@@ -89,7 +99,7 @@ class GameControl {
             alert(e.message + ' Game over')
             this.isLive = false;
         }
-        this.isLive && setTimeout(this.run.bind(this), 250 - (this.scorePanel.level - 1) * 50);
+        this.isLive && setTimeout(this.run.bind(this), 200 - (this.scorePanel.level - 1) * 40);
     }
 
 
