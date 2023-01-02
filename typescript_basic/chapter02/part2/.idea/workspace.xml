@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="302d38d6-dc1e-48e4-b6ca-a9f657806622" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/GameControl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameControl.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/ScorePanel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/ScorePanel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Snake.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Snake.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.less" afterDir="false" />
-    </list>
+    <list default="true" id="302d38d6-dc1e-48e4-b6ca-a9f657806622" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672559644603</updated>
       <workItem from="1672559645729" duration="13072000" />
-      <workItem from="1672638061257" duration="4633000" />
+      <workItem from="1672638061257" duration="5088000" />
     </task>
     <servers />
   </component>
