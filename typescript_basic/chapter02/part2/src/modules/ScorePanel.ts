@@ -1,6 +1,6 @@
 class ScorePanel {
     score = 0;
-    level = 0;
+    level = 1;
     scoreEl: HTMLElement;
     levelEl: HTMLElement;
     maxLevel: number;

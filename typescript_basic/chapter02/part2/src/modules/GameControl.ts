@@ -19,6 +19,8 @@ class GameControl {
 
     init() {
         document.addEventListener('keydown', this.keyDownHandler.bind(this));
+        // this.scorePanel.level = 10;
+        this.run();
     }
 
     /*
@@ -54,6 +56,7 @@ class GameControl {
         }
         this.snake.X = X;
         this.snake.Y = Y;
+        setTimeout(this.run.bind(this), 300 - (this.scorePanel.level - 1) * 30);
     }
 }
 
