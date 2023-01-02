@@ -99,7 +99,7 @@ class GameControl {
             alert(e.message + ' Game over')
             this.isLive = false;
         }
-        this.isLive && setTimeout(this.run.bind(this), 200 - (this.scorePanel.level - 1) * 40);
+        this.isLive && setTimeout(this.run.bind(this), 200 - (this.scorePanel.level) * 40);
     }
 
 

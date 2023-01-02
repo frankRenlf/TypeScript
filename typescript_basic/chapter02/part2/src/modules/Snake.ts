@@ -40,8 +40,7 @@ class Snake {
 
     restore() {
         alert('restart game')
-
-        for (let i = 1; i <= this.sectionList.length; i++) {
+        for (let i = this.sectionList.length - 1; i > 0; i--) {
             this.element.removeChild(this.sectionList[i]);
         }
     }
