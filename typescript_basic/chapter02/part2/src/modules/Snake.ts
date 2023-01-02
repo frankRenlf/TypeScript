@@ -23,6 +23,7 @@ class Snake {
         if (value < 0 || value > 290) {
             throw new Error('Hit the wall!')
         }
+        this.moveSections();
         this.head.style.left = value + 'px';
     }
 
@@ -31,6 +32,7 @@ class Snake {
         if (value < 0 || value > 290) {
             throw new Error('Hit the wall!')
         }
+        this.moveSections();
         this.head.style.top = value + 'px';
     }
 
@@ -38,6 +40,14 @@ class Snake {
         this.element.insertAdjacentHTML("beforeend", "<div></div>");
     }
 
+    moveSections() {
+        for (let i = this.sectionList.length - 1; i > 0; i--) {
+            let X = (this.sectionList[i - 1] as HTMLElement).offsetLeft;
+            let Y = (this.sectionList[i - 1] as HTMLElement).offsetTop;
+            (this.sectionList[i] as HTMLElement).style.left = X + 'px';
+            (this.sectionList[i] as HTMLElement).style.top = Y + 'px';
+        }
+    }
 
 }
 

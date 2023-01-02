@@ -78,12 +78,7 @@ class GameControl {
                 break;
         }
         // check is eaten
-        if (this.checkEat(X, Y)) {
-            console.log('eat');
-            this.food.change();
-            this.scorePanel.addScore();
-            this.snake.addSection();
-        }
+        this.checkEat(X, Y);
 
         // modify snake position
         try {
@@ -99,7 +94,12 @@ class GameControl {
 
     // snake eat food
     checkEat(X: number, Y: number) {
-        return X === this.food.X && Y === this.food.Y;
+        if (X === this.food.X && Y === this.food.Y) {
+            console.log('eat');
+            this.food.change();
+            this.scorePanel.addScore();
+            this.snake.addSection();
+        }
     }
 }
 
