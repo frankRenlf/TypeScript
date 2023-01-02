@@ -8,12 +8,14 @@ class GameControl {
     scorePanel: ScorePanel;
     food: Food;
     direction: string;
+    // game over
+    isLive: boolean = true;
 
     constructor() {
         this.snake = new Snake();
         this.scorePanel = new ScorePanel();
         this.food = new Food();
-        this.direction = 'ArrowRight';
+        this.direction = '';
         this.init();
     }
 
@@ -56,7 +58,7 @@ class GameControl {
         }
         this.snake.X = X;
         this.snake.Y = Y;
-        setTimeout(this.run.bind(this), 300 - (this.scorePanel.level - 1) * 30);
+        this.isLive && setTimeout(this.run.bind(this), 300 - (this.scorePanel.level - 1) * 30);
     }
 }
 
