@@ -13,7 +13,7 @@ class GameControl {
         this.snake = new Snake();
         this.scorePanel = new ScorePanel();
         this.food = new Food();
-        this.direction = 'right';
+        this.direction = 'ArrowRight';
         this.init();
     }
 
@@ -52,6 +52,8 @@ class GameControl {
                 X += 10;
                 break;
         }
+        this.snake.X = X;
+        this.snake.Y = Y;
     }
 }
 
