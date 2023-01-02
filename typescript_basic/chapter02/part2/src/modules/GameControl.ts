@@ -16,6 +16,7 @@ class GameControl {
         this.scorePanel = new ScorePanel();
         this.food = new Food();
         this.direction = '';
+        this.food.change();
         this.init();
     }
 
@@ -88,7 +89,7 @@ class GameControl {
             alert(e.message + ' Game over')
             this.isLive = false;
         }
-        this.isLive && setTimeout(this.run.bind(this), 300 - (this.scorePanel.level - 1) * 30);
+        this.isLive && setTimeout(this.run.bind(this), 250 - (this.scorePanel.level - 1) * 50);
     }
 
 

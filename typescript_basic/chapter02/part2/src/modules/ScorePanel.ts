@@ -6,7 +6,7 @@ class ScorePanel {
     maxLevel: number;
     partition: number;
 
-    constructor(maxLevel: number = 10, partition: number = 5) {
+    constructor(maxLevel: number = 5, partition: number = 5) {
         this.scoreEl = document.getElementById('score')!;
         this.levelEl = document.getElementById('level')!;
         this.maxLevel = maxLevel;

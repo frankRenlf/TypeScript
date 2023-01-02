@@ -41,6 +41,7 @@ class Snake {
     }
 
     moveSections() {
+
         for (let i = this.sectionList.length - 1; i > 0; i--) {
             let X = (this.sectionList[i - 1] as HTMLElement).offsetLeft;
             let Y = (this.sectionList[i - 1] as HTMLElement).offsetTop;
