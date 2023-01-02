@@ -32,7 +32,28 @@ class GameControl {
         ArrowRight
      */
     keyDownHandler(event: KeyboardEvent) {
-        this.direction = event.key;
+        switch (event.key) {
+            case "ArrowUp":
+                if (this.direction != "ArrowDown") {
+                    this.direction = event.key;
+                }
+                break;
+            case "ArrowDown":
+                if (this.direction != "ArrowUp") {
+                    this.direction = event.key;
+                }
+                break;
+            case "ArrowLeft":
+                if (this.direction != "ArrowRight") {
+                    this.direction = event.key;
+                }
+                break;
+            case "ArrowRight":
+                if (this.direction != "ArrowLeft") {
+                    this.direction = event.key;
+                }
+                break;
+        }
     }
 
     // control the move of snake
@@ -56,14 +77,29 @@ class GameControl {
                 X += 10;
                 break;
         }
+        // check is eaten
+        if (this.checkEat(X, Y)) {
+            console.log('eat');
+            this.food.change();
+            this.scorePanel.addScore();
+            this.snake.addSection();
+        }
+
+        // modify snake position
         try {
             this.snake.X = X;
             this.snake.Y = Y;
-        } catch (e:any) {
-            alert(e.message+' Game over')
+        } catch (e: any) {
+            alert(e.message + ' Game over')
             this.isLive = false;
         }
         this.isLive && setTimeout(this.run.bind(this), 300 - (this.scorePanel.level - 1) * 30);
+    }
+
+
+    // snake eat food
+    checkEat(X: number, Y: number) {
+        return X === this.food.X && Y === this.food.Y;
     }
 }
 

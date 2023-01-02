@@ -13,7 +13,7 @@ class ScorePanel {
         this.partition = partition;
     }
 
-    scoreAdd() {
+    addScore() {
         this.score++;
         this.scoreEl.innerHTML = this.score.toString();
         if (this.score % this.partition === 0) {
